@@ -1,0 +1,10 @@
+#! /bin/bash
+#
+#Endast
+#
+echo "Andres Popov"
+echo "ISP218"
+echo "Antud aine tundub kasulik ja huvitav"
+echo "Praegune mulje on hea, on oodata palju huvitavaid tegevusi. Ülesanded tegin ära ilma vigadeta."
+#
+#skripti lõpp
