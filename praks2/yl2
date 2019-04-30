@@ -1,10 +1,10 @@
 #! /bin/bash
 #
-#Endast
+# Algus Kasutajad serveris
 #
-echo "Andres Popov"
-echo "ISP218"
-echo "Antud aine tundub kasulik ja huvitav"
-echo "Praegune mulje on hea, on oodata palju huvitavaid tegevusi. Ülesanded tegin ära ilma vigadeta."
+who | cut -f1 -d' ' | cut -f2 -d'.' > eesnimi
+who | cut -f2 -d' ' | cut -f1 -d'.' > perenimi
+paste -d'.' perenimi eesnimi > nimi
+more nimi | sort | uniq
 #
-#skripti lõpp
+#lõpp
