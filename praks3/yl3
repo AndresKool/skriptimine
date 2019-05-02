@@ -1,0 +1,9 @@
+#! /bin/bash
+#
+# masina töö aeg
+#
+echo -n $(hostname) # väljasta masinanimi echoga, et saaks kasutada -n
+echo -n " at" # väljasta "at'
+uptime | cut -d"," -f 1 # väljasta aeg millal masin tööle läks ja kui kaua sellest ajast on
+#
+# skripti lõpp
