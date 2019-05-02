@@ -1,0 +1,8 @@
+#! /bin/bash
+#
+# loe nime
+echo "Mis on teie nimi?" # väljasta lause
+read nimi # loe mida on kirjutatud
+echo "Tere tulemast $nimi" # väljasta lause koos loetuga $nimi
+#
+# lõpp
