@@ -1,0 +1,7 @@
+#! /bin/bash
+#
+# ülesanne 2
+#
+find /var/log/ -name "*.log" 2>/dev/null | sort -rn # leia failid ja järjesta ridade arvu järgi
+#
+# lõpp
