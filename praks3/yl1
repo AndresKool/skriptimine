@@ -1,0 +1,17 @@
+#! /bin/bash
+#
+# kuupäev ja sellega seotud info
+#
+Tana=$(date +"%A, %B %d, %Y") # esimese rea muutuja
+echo -n "Today is " # tagasta sõnad
+echo $Tana # tagasta muutuja $Tana
+#
+aeg=$(date +"%R") # teise rea muutuja
+echo -n "Today is " # tagasta sõnad
+echo $aeg # tagasta muutuja $aeg
+#
+echo " " # tühi rida
+#
+cal # kalender
+#
+# lõpp
