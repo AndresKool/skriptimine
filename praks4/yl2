@@ -1,0 +1,23 @@
+#! /bin/bash
+#
+# Kandiku ja küpsiste suurused, küpsiste kihid ning mitu küpsist on pakis
+#
+echo "Kui pikk on kandik? (cm)" # tagasta lause
+read Kandikupikkus # loe muutujat
+echo "Kui lai on kandik? (cm)"
+read Kandikulaius
+echo "Kui suur on küpsis? (cm)"
+read Kpsisesuurus
+echo "Mitme kihiline tuleb tort?"
+read Kihtidearv
+echo "Mitu küpsist on pakis?"
+read Kpsistearvpakis
+Kpsistearvpikkuses=$(expr $Kandikupikkus / $Kpsisesuurus) # jaga kandiku pikkuse küpsise suurusega
+Kpsistearvlaiuses=$(expr $Kandikulaius / $Kpsisesuurus) # jaga kandiku laiuse küpsise suurusega
+Kpsistearvkihis=$(expr $Kpsistearvpikkuses \* $Kpsistearvlaiuses) # korruta küpsistearvud kokku
+Kpsised=$(expr $Kpsistearvkihis \* $Kihtidearv) # korruta küpsistearv kihis kihtide arvuga
+Pakkidearv=$(expr $Kpsised / $Kpsistearvpakis) # jaga küpsistearv küpsistearvuga pakis
+#
+echo "Teil on vaja osta $Pakkidearv pakki"
+#
+# lõpp
