@@ -1,0 +1,14 @@
+#! /bin/bash
+#
+# Ringi pindala ja ümbermõõt
+#
+echo "Mis on ringi raadius? (cm)"
+read raadius
+
+pi=3.1415
+raadius2=$(echo "$raadius * $raadius" | bc)
+pindala=$(echo "$pi * $raadius2" | bc)
+umber=$(echo "2 * $pi * $raadius" | bc)
+echo "Ringi pindala on $pindala ruutsentimeetrit ja ümbermõõt on $umber cm"
+#
+# Lõpp
