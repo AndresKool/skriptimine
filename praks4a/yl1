@@ -1,0 +1,13 @@
+#! /bin/bash
+#
+# Tervitus ja vanus
+#
+echo "Mis on teie nimi?" # tagastab lause
+read nimi # loeb muutujat
+echo "Tere $nimi!"
+sleep 1s # magab 1 sekund
+echo "Mis aastal te sündisite?"
+read aasta
+echo "Te olete $(expr 2019 - $aasta) aastat vana." # arvutab vanuse ja tagastab lause koos vanusega
+#
+# Lõpp
