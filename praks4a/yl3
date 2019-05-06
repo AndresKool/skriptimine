@@ -1,0 +1,13 @@
+#! /bin/bash
+#
+# backup
+#
+echo "--------------Tere!---------------"
+echo -n "Sisestage kataloogi nimi"
+read katnimi
+
+date=$(date +"%d.%m.%Y")
+aeg=$(date +"%R")
+baasnimi="$(basename $katnimi)" 
+#
+# Lõpp
