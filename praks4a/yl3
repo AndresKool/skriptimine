@@ -3,11 +3,16 @@
 # backup
 #
 echo "--------------Tere!---------------"
-echo -n "Sisestage kataloogi nimi"
+echo -n "Sisestage kataloogi nimi "
 read katnimi
 
 date=$(date +"%d.%m.%Y")
 aeg=$(date +"%R")
-baasnimi="$(basename $katnimi)" 
+bnimi="$(basename $katnimi)"
+
+tar -zcvf /home/user/skriptimine/praks4a/backup/$bnimi.$aeg.$date.tar.gz $katnimi
+
+echo "backup_i nimi on $bnimi.backup.tar.gz ja ta asub /home/user/skriptimine/praks4a/backup/ kataloogis."
+echo "-----------------Tehtud!-------------------"
 #
 # Lõpp
