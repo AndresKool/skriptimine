@@ -1,0 +1,14 @@
+#! /bin/bash
+#
+# Kolmnurga hüpotenuus
+#
+echo "Tere!"
+echo "Sisesta kolmnurga a külje väärtus"
+read a
+echo "Sisesta kolmnurga b külje väärtus"
+read b
+sleep 0.5;
+echo -n "Hüpotenuus on "
+echo "scale=2;sqrt(($a^2)+($b^2))" |bc
+#
+# Lõpp
