@@ -1,0 +1,15 @@
+#! /bin/bash
+
+echo "Sisestage Kolmnurga a külg"
+read a
+echo "Sisestage Kolmnurga b külg"
+read b
+echo "Sisestage Kolmnurga c külg"
+read c
+
+p=$(echo "scale=2;($a+$b+$c)/2" | bc)
+S=$(echo "scale=2;sqrt($p*($p - $a)*($p - $b)*($p - $c))" | bc)
+
+echo "Kolmnurga Pindala on $S"
+
+# Lõpp
