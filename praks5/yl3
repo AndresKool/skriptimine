@@ -1,0 +1,14 @@
+#! /bin/bash
+
+echo "Pühapäev-0, Esmaspäev-1, Teisipäev-2, Kolmapäev-3, Neljapäev-4, Reede-5, Laupäev-6"
+echo "Mitmendal päeval sõidate ära?"
+read paev
+echo "Mitu päeva olete reisil?"
+read paevnr
+
+lisa=$(($paevnr % 7))
+paevad=$(($paev + $lisa))
+
+echo "Tagasi olete päeval $paevad "
+
+# Lõpp
