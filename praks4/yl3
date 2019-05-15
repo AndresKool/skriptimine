@@ -16,10 +16,5 @@ echo "Täidetud on $bussid bussi ja üle jääb $jaak kohta"
 else
 maha=$(expr $reisijad % $kohad)
 echo "Täielikult on täidetud $bussid bussi ja maha jääb $maha inimest."
-
-if [ $maha != 0 ]; then
-echo "Kokku oleks vaja $(expr $bussid + 1) bussi, et kõik peale mahuksid."
-fi
-fi
 #
 # lõpp
