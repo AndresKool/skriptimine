@@ -1,0 +1,10 @@
+#! /bin/bash
+echo "Sisestage üks number"
+read nr
+jaak=$(expr $nr % 2)
+if [ $jaak == 0 ]
+then
+echo "Antud number $nr on paaris."
+else
+echo "Antud number $nr on paaritu."
+fi
