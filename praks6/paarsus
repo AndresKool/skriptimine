@@ -1,0 +1,8 @@
+#! /bin/bash
+jaak=$(expr $1 % 2)
+if [ $jaak == 0 ]
+then
+echo "$1 on paarisarv"
+else
+echo "$1 on paaritu arv"
+fi
