@@ -1,0 +1,18 @@
+#! /bin/bash
+
+valik=0
+echo "1. Unix (Sun OS)"
+echo "2. Linux (Red Hat)"
+
+echo -n "Vali OS [1 või 2]"
+read valik
+
+if [ $valik == 1 ]
+then
+	echo 'Valisid Unix (Sun OS)'
+elif [ $valik == 2 ]
+then
+	echo 'Valisid Linux (Red Hat)'
+else
+	echo 'Ei meeldi kumbki?'
+fi
