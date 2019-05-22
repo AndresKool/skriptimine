@@ -19,7 +19,7 @@ then
 echo "Praegu on sügis"
 
 else
-echo "Pole sellist kuud siin planeedil veel olemas"
+echo "Sellist kuud pole siin planeedil veel olemas"
 
 fi
 # Lõpp
