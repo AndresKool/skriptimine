@@ -1,0 +1,15 @@
+#! /bin/bash
+# for (( sum=1; sum<11; sum++ ))
+# for sum in {1..10}
+read vahe
+for (( sum=1; sum<=$vahe; sum++ ))
+do
+summ=$(($sum % 2))
+if (($summ -eq ==0))
+then
+summa=$(($summa + $sum))
+echo $summa
+fi
+done
+echo "Paarisarvude summa on: $summa"
+# Lõpp
