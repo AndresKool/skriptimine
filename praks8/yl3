@@ -16,4 +16,5 @@ case $kuu in
 "11") echo "See on November";;
 "12") echo "See on Detsember";;
 *) echo "Sellist Kuud ple olemas";;
+
 esac
